@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/addSupplierNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/googlesans"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            android:hint="Enter Name"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            android:id="@+id/addSupplierEmailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/googlesans"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_maxCharacters="11"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            android:id="@+id/addSupplierNumberEdit"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/googlesans"
+            android:hint="Enter Number"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:text="Edit Supplier"
+            android:textColor="#fff"
+            android:id="@+id/btnAddSupplierEdit"
+            android:fontFamily="@font/googlesans"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
