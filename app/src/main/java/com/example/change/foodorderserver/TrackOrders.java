@@ -147,7 +147,7 @@ public class TrackOrders extends FragmentActivity implements OnMapReadyCallback,
 
     private void addRequestMarkerRoute(final LatLng shipLocation, String address) {
 
-        mService.getGeoCode(address,"false","AIzaSyB95eskfrIUWbvkxqIxnhWWIsjsQpUysUw").enqueue(new Callback<String>() {
+        mService.getGeoCode(address,"false","Your API Key Here").enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 try {
